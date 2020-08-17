@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  # resources :libraries
-  # resources :books
-  # resources :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   get '/books', to: 'books#index'
@@ -15,10 +12,10 @@ Rails.application.routes.draw do
   delete 'users/:id', to: 'users#destory'
   post '/users/login', to: 'users#login'
 
-  get '/libraries', to: 'libraries#index'
-  post '/libraries', to: 'libraries#create'
-  patch '/libraries/:id', to: 'libraries#update'
-  delete 'libraries/:id', to: 'libraries#destory'
+  get '/annotations', to: 'annotations#index'
+  post '/annotations', to: 'annotations#create'
+  patch '/annotations/:id', to: 'annotations#update'
+  delete 'annotations/:id', to: 'annotations#destory'
 
 
 end

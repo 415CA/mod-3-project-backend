@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class LibrariesControllerTest < ActionDispatch::IntegrationTest
+class AnnotationsControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

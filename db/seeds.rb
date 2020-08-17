@@ -5,20 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Book.destroy_all
-User.destroy_all
-Library.destroy_all
 
 Book.destroy_all
 User.destroy_all
-Library.destroy_all
+Annotation.destroy_all
 
-newUser = User.create({
+new_user = User.create({
   username: 'user',
   email: 'user@user.com',
 })
 
-newBook = Book.create({
+new_book = Book.create({
   title: 'event.target.title.value',
   author: 'event.target.author.value',
   description: 'event.target.description.value',
@@ -26,12 +23,11 @@ newBook = Book.create({
   current_page: 'event.target.page.value',
   image: 'event.target.image.value',
   info_link: 'event.target.link.value',
-  user_id: newUser
+  user_id: new_user,
 })
 
-Library.create({
+Annotation.create({
   page_number: 27,
   comment: 'Best part of the book',
-  user_id: newUser,
-  book_id: newBook,
+  book_id: new_book,
 })

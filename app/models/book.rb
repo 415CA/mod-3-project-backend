@@ -1,4 +1,4 @@
 class Book < ApplicationRecord
-  belongs_to :library
-  has_one :user, through: :library
+  belongs_to :user
+  has_many :annotations
 end
