@@ -10,7 +10,7 @@ class AnnotationsController < ApplicationController
   end
 
   def create
-    @annotation = Annotation.create(book_params)
+    @annotation = Annotation.create(annotation_params)
     render json: @annotation
   end
 
