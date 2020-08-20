@@ -17,7 +17,7 @@ class BooksController < ApplicationController
 
   def update
     @book = Book.find(params[:id])
-    @book.update(Book_params)
+    @book.update(book_params)
     render json: @book
   end
 
