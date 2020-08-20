@@ -1,4 +1,5 @@
 class AnnotationsController < ApplicationController
+  
   def index
     @annotations = Annotation.all
     render json: @annotations
